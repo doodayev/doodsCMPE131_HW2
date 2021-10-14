@@ -14,7 +14,7 @@ def calculator(number1, number2, operator):
     if(operator=="**"):
         return(float(number1**number2))
     else:
-        return false
+        return False
     
 def parse_input():
     numba1=""
