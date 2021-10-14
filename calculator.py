@@ -4,15 +4,17 @@ def calculator(number1, number2, operator):
     number1=float(number1)
     number2=float(number2)
     if(operator=="+"):
-        print(float(number1+number2))
+        return(float(number1+number2))
     if(operator=="-"):
-        print(float(number1-number2))
+        return(float(number1-number2))
     if(operator=="*"):
-        print(float(number1*number2))
+        return(float(number1*number2))
     if(operator=="/"):
-        print(float(number1/number2))
+        return(float(number1/number2))
     if(operator=="**"):
-        print(float(number1**number2))
+        return(float(number1**number2))
+    else:
+        return false
     
 def parse_input():
     numba1=""
@@ -21,7 +23,7 @@ def parse_input():
     ParseThis=input("Enter equation: ")
     Bruh=re.findall(r'[0-9\.]+|[^0-9\.]+', ParseThis)
     #Bruh=re.split(r'(\D)', ParseThis)
-    calculator(Bruh[0], Bruh[2], Bruh[1])
+    print(calculator(Bruh[0], Bruh[2], Bruh[1]))
     
     
 
