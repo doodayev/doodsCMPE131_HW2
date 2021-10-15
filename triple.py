@@ -1,12 +1,12 @@
 def tripler(func):
     def wrapper(*args, **kwargs):
  
-        print("Inside the calculation function")
+        #print("Inside the calculation function")
          #thing returns whatever got inputted
         thing=func(*args, **kwargs)
         thing=func(*args, **kwargs)
         thing=func(*args, **kwargs)
-        print("Before return from calculation function")
+        #print("Before return from calculation function")
         return thing
  
     return wrapper
